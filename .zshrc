@@ -1,7 +1,7 @@
 #
 # .zshrc
 #
-# @author Jeff Geerling
+# @author Bruno Scota de Carvalho
 #
 
 # Colors.
@@ -51,6 +51,9 @@ alias gc='git commit'
 alias gp='git pull --rebase'
 alias gcam='git commit -am'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
+#Mac-Dev-Playbook aliases.
+alias refaz='ansible-playbook /Users/bcarvalho/Projects/github/mac-dev-playbook/main.yml --ask-become-pass'
 
 # Completions.
 autoload -Uz compinit && compinit
