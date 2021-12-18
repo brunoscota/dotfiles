@@ -4,6 +4,9 @@
 # @author Bruno Scota de Carvalho
 #
 
+# Theme:
+ZSH_THEM="robbyrussell"
+
 # Colors.
 unset LSCOLORS
 export CLICOLOR=1
