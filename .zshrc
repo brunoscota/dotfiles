@@ -5,7 +5,7 @@
 #
 
 # Theme:
-ZSH_THEM="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Colors.
 unset LSCOLORS
