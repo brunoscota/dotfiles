@@ -59,12 +59,11 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
   git
-  zsh-autosuggestions
   kubectl
+  zsh-autosuggestions
   )
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
