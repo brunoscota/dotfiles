@@ -63,16 +63,5 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(pyenv init -)"
 
-GOOGLE_APPLICATION_CREDENTIALS="/Users/bcarvalho/Desktop/kaholo.json"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/bcarvalho/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bcarvalho/Desktop/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/bcarvalho/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bcarvalho/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
-
-
-# gcloud auth activate-service-account kaholo@quantum-petal-339119.iam.gserviceaccount.com --key-file=~/Desktop/kaholo.json --project=quantum-petal-339119
-
 # add Pulumi to the PATH
-export PATH=$PATH:$HOME/.pulumi/bin
+# export PATH=$PATH:$HOME/.pulumi/bin
