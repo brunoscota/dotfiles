@@ -7,7 +7,7 @@ then
   source ~/.aliases
 fi
 
-export ZSH="/Users/bcarvalho/.oh-my-zsh"
+export ZSH="/Users/brunoscota/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
