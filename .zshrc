@@ -48,7 +48,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Don't require escaping globbing characters in zsh.
-unsetopt nomatch
+# unsetopt nomatch
 
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 if [ -f ~/.aliases ]
