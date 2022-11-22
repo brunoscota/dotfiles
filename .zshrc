@@ -60,3 +60,12 @@ eval "$(pyenv virtualenv-init -)"
 
 # add Pulumi to the PATH
 # export PATH=$PATH:$HOME/.pulumi/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/brunoscota/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/brunoscota/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/brunoscota/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/brunoscota/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="${PATH}:${HOME}/.krew/bin"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
