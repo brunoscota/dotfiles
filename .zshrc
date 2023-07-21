@@ -18,9 +18,8 @@ ZSH_THEME="robbyrussell"
 plugins=(
   z
   git
-  zsh-syntax-highlighting
+  # zsh-syntax-highlighting
   zsh-autosuggestions
-  fzf
   kubectl
   )
 
@@ -73,9 +72,6 @@ if [ -f '/Users/brunoscota/Downloads/google-cloud-sdk/completion.zsh.inc' ]; the
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 # export DOCKER_HOST=tcp://lenovo:2375
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
