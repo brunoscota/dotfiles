@@ -16,6 +16,7 @@ export ZSH="/Users/brunoscota/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
+  z
   git
   kubectl
   zsh-autosuggestions
@@ -69,3 +70,8 @@ if [ -f '/Users/brunoscota/Downloads/google-cloud-sdk/completion.zsh.inc' ]; the
 
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+# export DOCKER_HOST=tcp://lenovo:2375
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
