@@ -52,8 +52,8 @@ source $ZSH/oh-my-zsh.sh
 # Don't require escaping globbing characters in zsh.
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # export PYENV_ROOT="$HOME/.pyenv"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -63,12 +63,6 @@ eval "$(pyenv virtualenv-init -)"
 # add Pulumi to the PATH
 # export PATH=$PATH:$HOME/.pulumi/bin
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/brunoscota/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/brunoscota/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/brunoscota/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/brunoscota/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 # export DOCKER_HOST=tcp://lenovo:2375
@@ -76,3 +70,9 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/completion.zsh.inc'; fi
