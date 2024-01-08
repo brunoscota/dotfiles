@@ -1,0 +1,7 @@
+[core]
+project = finmgmt-92acb
+account = finmgmtdataform@finmgmt-92acb.iam.gserviceaccount.com
+
+[auth]
+# Credentials file path
+credentials = ~/.config/gcloud/finmgmt-92acb-4316d8cb85e1.json

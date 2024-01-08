@@ -30,3 +30,8 @@ alias vscw='code --wait'
 alias vscv='code --version'
 alias vscd='code --diff'
 alias vscm='code --goto'
+
+
+
+alias gcloudl='gcloud auth login'
+alias gcloudca='gcloud config configurations activate'
