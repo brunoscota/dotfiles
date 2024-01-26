@@ -7,7 +7,7 @@ then
   source ~/.aliases
 fi
 
-export ZSH="/Users/brunoscota/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -18,7 +18,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
   z
   git
-  # zsh-syntax-highlighting
   zsh-autosuggestions
   kubectl
   )
@@ -59,20 +58,10 @@ export NVM_DIR="$HOME/.nvm"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+eval "$(rbenv init - zsh)"
 
 # add Pulumi to the PATH
 # export PATH=$PATH:$HOME/.pulumi/bin
 
 export PATH="${PATH}:${HOME}/.krew/bin"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 # export DOCKER_HOST=tcp://lenovo:2375
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/brunoscota/Projects/github/flightScan/gcloudcli/google-cloud-sdk/completion.zsh.inc'; fi
