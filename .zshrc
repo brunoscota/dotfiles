@@ -49,7 +49,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Don't require escaping globbing characters in zsh.
 # Check if not running inside a Docker container
-if [ ! -f /.dockerenv ] && [ "$(uname)" != "Darwin" ]; then
+if [ ! -f /.dockerenv ] && [ "$(uname)" = "Darwin" ]; then
   export HOMEBREW_AUTO_UPDATE_SECS=604800
   export NVM_DIR="$HOME/.nvm"
   [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
