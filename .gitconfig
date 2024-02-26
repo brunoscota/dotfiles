@@ -35,5 +35,5 @@
 	rebase = true
 [safe]
 	directory = /opt/homebrew
-[includeIf "gitdir:~/Projects/totvstfs/"]
+[includeIf "gitdir:~/projects/totvstfs/"]
 	path = ~/.gitconfig-totvstfs
