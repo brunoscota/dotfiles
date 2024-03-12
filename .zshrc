@@ -51,19 +51,25 @@ source $ZSH/oh-my-zsh.sh
 # Check if not running inside a Docker container
 if [ ! -f /.dockerenv ] && [ "$(uname)" = "Darwin" ]; then
   export HOMEBREW_AUTO_UPDATE_SECS=604800
+
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init - zsh)"
 
+# add variables in case of using UBUNTU
 
-# add Pulumi to the PATH
-# export PATH=$PATH:$HOME/.pulumi/bin
+if [ "$(uname)" = "Linux" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
 
 export PATH="${PATH}:${HOME}/.krew/bin"
 # export DOCKER_HOST=tcp://lenovo:2375
