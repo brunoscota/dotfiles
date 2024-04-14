@@ -49,6 +49,7 @@ local spam = {
     { from: 'info@abraweb.com.br' },
     { from: 'arbsoft@gmail.com' },
     { from: 'donotreply@community.upwork.com' },
+    { from: 'vmware-code@vmwebapp.com' },
   ],
 };
 
