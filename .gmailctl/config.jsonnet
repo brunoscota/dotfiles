@@ -61,11 +61,7 @@ local rules = [
   {
     filter: { or: [ { from: 'faturadigital@itaupersonnalite.com.br' }, { from: 'faturaporemail@santander.com.br' } ] },
     actions: { labels: ['Fatura do Cartão'] },
-  },
-  {
-    filter: { or: [ { from: me }, { from: 'brunoscota@hotmail.com' } ] },
-    actions: { labels: ['Fatura do Cartão'] },
-  },
+  }
 ];
 
 // Here is where we define our configuration and apply the rules
