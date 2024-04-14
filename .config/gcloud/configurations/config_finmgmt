@@ -1,6 +1,6 @@
 [core]
 project = finmgmt-92acb
-account = totvsapps-platform-portal-prd@tab1784-service-72-322963.iam.gserviceaccount.com
+account = bruno.scota@totvs.com.br
 disable_usage_reporting = False
 
 [auth]
