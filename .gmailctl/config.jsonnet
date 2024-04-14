@@ -19,6 +19,7 @@ local spam = {
     { from:'news@palitoman.com.br' },{ from:'dontstayvirgin@movielol.org' },{ from:'videolarcom@zmd.videolar.com' },{ from:'support@100webspace.com' },
     { from:'novidades@mercadolivreofertas.com.br' },{ from:'empregos@smtp10.manager.com.br' },{ from:'ingresso@ingresso.com.br' },{ from:'arbsoft@gmail.com' },
     { from:'member-3801061@shtyle.fm' },{ from:'administracao@g-sat.net' },{ from:'help-subscriber@phpclasses.org' },{ from:'NoReply@communityhub.microsoft.com' },
+    { from:'shoulder@news.shoulder.com.br' },
   ],
 };
 
