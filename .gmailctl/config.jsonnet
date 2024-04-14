@@ -50,6 +50,7 @@ local spam = {
     { from: 'arbsoft@gmail.com' },
     { from: 'donotreply@community.upwork.com' },
     { from: 'vmware-code@vmwebapp.com' },
+    { from: 'NoReply@communityhub.microsoft.com' },
   ],
 };
 
