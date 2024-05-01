@@ -3,6 +3,7 @@ credentials-file: /Users/brunoscota/.cloudflared/398ca6e7-a9e1-44b4-8eae-c7dfc43
 ingress:
   - hostname: backstage-totvs-macbook.scotaitconsulting.com
     service: http://localhost:3001
-  - hostname: backstage-totvs-macbook.scotaitconsulting.com/api
+  - hostname: backstage-totvs-macbook.scotaitconsulting.com
+    path: /api
     service: http://localhost:4180
   - service: http_status:404
