@@ -6,6 +6,12 @@ local lib = import 'gmailctl.libsonnet';
 // locals are variables that can be used in the rest of the file
 local me = 'brunoscota@gmail.com';
 local toMe = { to: me };
+
+local labels = [
+  { name: 'Fatura do Cartão' },
+  { name: 'Faculdade' },
+];
+
 local spam = {
   or: [
     { from:'offers@godaddy.com' },{ from:'promociones@correodirect.com' },{ from:'CourtneyseismologyDempsey@hughesengines.com' },{ from:'yaniyorum.ben@hotmail.com' },
@@ -19,20 +25,15 @@ local spam = {
     { from:'news@palitoman.com.br' },{ from:'dontstayvirgin@movielol.org' },{ from:'videolarcom@zmd.videolar.com' },{ from:'support@100webspace.com' },
     { from:'novidades@mercadolivreofertas.com.br' },{ from:'empregos@smtp10.manager.com.br' },{ from:'ingresso@ingresso.com.br' },{ from:'arbsoft@gmail.com' },
     { from:'member-3801061@shtyle.fm' },{ from:'administracao@g-sat.net' },{ from:'help-subscriber@phpclasses.org' },{ from:'NoReply@communityhub.microsoft.com' },
-    { from:'shoulder@news.shoulder.com.br' },
+    { from:'shoulder@news.shoulder.com.br' }, { from:'reply@e.thenorthface.com' }, { from:'hello@mail.plex.tv' }, { from:'ubuntu-hardened@lists.ubuntu.com' },
+    { from:'transacional@toroemail.toroinvestimentos.com.br' }, { from:'mail@mg.baselime.io' }, { from:'no-reply@e.udemymail.com'}, { from:'mmartan@inf.mmartan.com.br' },
   ],
 };
 
 // Here we set our rules
 local rules = [
-  {
-    filter: spam,
-    actions: { delete: true },
-  },
-  {
-    filter: { or: [ { from: 'faturadigital@itaupersonnalite.com.br' }, { from: 'faturaporemail@santander.com.br' } ] },
-    actions: { labels: ['Fatura do Cartão'] },
-  }
+  { filter: spam, actions: { delete: true } },
+  { filter: { or: [ { from: 'faturadigital@itaupersonnalite.com.br' }, { from: 'faturaporemail@santander.com.br' } ] }, actions: { archive: true, labels: ['Fatura do Cartão'] } },
 ];
 
 // Here is where we define our configuration and apply the rules
@@ -42,5 +43,6 @@ local rules = [
     name: 'Bruno Scota de Carvalho',
     email: me,
   },
+  labels: labels,
   rules: rules
 }
