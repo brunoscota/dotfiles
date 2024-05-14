@@ -52,12 +52,19 @@ source $ZSH/oh-my-zsh.sh
 if [ ! -f /.dockerenv ] && [ "$(uname)" = "Darwin" ]; then
   export HOMEBREW_AUTO_UPDATE_SECS=604800
 
+  export PATH=$PATH:$HOME/go/bin
+
   export NVM_DIR="$HOME/.nvm"
   [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+
+  if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init --path)"
+    eval "$(pyenv init -)"
+  fi
   eval "$(rbenv init - zsh)"
 fi
 
