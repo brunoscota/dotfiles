@@ -18,6 +18,7 @@ local labels = [
   { name: 'Boletim TOTVS'},
   { name: 'Sistemas' },
   { name: 'Sistemas/DataDog' },
+  { name: 'Sistemas/Opsgenie' },
   { name: 'Sistemas/Azure DevOps' },
   { name: 'Sistemas/StatusPage' },
   { name: 'Sistemas/JIRA'},
@@ -26,7 +27,7 @@ local labels = [
 
 local spam = {
   or: [
-    { from: 'daily@updates.miro.com' }, { from: 'no-reply@reply.hashicorp.com' },
+    { from: 'daily@updates.miro.com' }, { from: 'no-reply@reply.hashicorp.com' }, { from: 'messages-noreply@linkedin.com' }, { from: 'updates-noreply@linkedin.com' }
   ]
 };
 
@@ -39,6 +40,7 @@ local rules = [
     { filter: { from: '@dtdg.co' }, actions: { archive: true, labels: ['Sistemas/DataDog'] } },
     { filter: { from: 'donotreply.jira@totvs.com.br' }, actions: { archive: true, labels: ['Sistemas/JIRA'] } },
     { filter: { from: 'azuredevops@microsoft.com' }, actions: { archive: true, labels: ['Sistemas/Azure DevOps'] } },
+    { filter: { from: 'opsgenie@opsgenie.net' }, actions: { archive: true, labels: ['Sistemas/Opsgenie'] } },
     { filter: { from: '@instatus.com' }, actions: { archive: true, labels: ['Sistemas/StatusPage'] } },
     { filter: { from: 'imprensa@sindppd-rs.org.br' }, actions: { archive: true, labels: ['Sindppd'] } },
     { filter: { from: 'totvsligados@totvs.com.br' }, actions: { archive: true, labels: ['Boletim TOTVS'] } },

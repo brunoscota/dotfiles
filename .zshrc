@@ -85,3 +85,5 @@ fi
 
 export PATH="${PATH}:${HOME}/.krew/bin"
 # export DOCKER_HOST=tcp://lenovo:2375
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
