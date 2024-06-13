@@ -35,5 +35,5 @@
 	rebase = true
 [safe]
 	directory = /opt/homebrew
-[includeIf "gitdir:~/projects/totvstfs/"]
+[includeIf "gitdir:~/projects/azuredevops/totvstfs/"]
 	path = ~/.gitconfig-totvstfs
