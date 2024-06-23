@@ -28,7 +28,7 @@ local spam = {
     { from:'shoulder@news.shoulder.com.br' },{ from:'reply@e.thenorthface.com' },{ from:'ubuntu-hardened@lists.ubuntu.com' },{ from: '@relacionamento.eqi-investimentos.com' },
     { from:'transacional@toroemail.toroinvestimentos.com.br' },{ from:'mail@mg.baselime.io' },{ from:'no-reply@e.udemymail.com'},{ from:'mmartan@inf.mmartan.com.br' },
     { from: 'promotions@kto.com'},{ from: 'no-reply@folhadespaulo.com.br'},{ from: 'Coursera@m.learn.coursera.org'},{ from: 'avianca@newsletter.avianca.com' },
-    { from: 'contato@globoplaymkt.globo.com' },{ from: 'Microsoftstore@microsoftstore.microsoft.com' },
+    { from: 'contato@globoplaymkt.globo.com' },{ from: 'Microsoftstore@microsoftstore.microsoft.com' }, { from: 'no-reply@abya.com'}
   ],
 };
 
