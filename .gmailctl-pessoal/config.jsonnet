@@ -35,7 +35,7 @@ local spam = {
 // Here we set our rules
 local rules = [
   { filter: spam, actions: { delete: true } },
-  { filter: { or: [ { from: 'faturadigital@itaupersonnalite.com.br' }, { from: 'faturaporemail@santander.com.br' } ] }, actions: { archive: true, labels: ['Fatura do Cartão'] } },
+  { filter: { or: [ { from: 'faturadigital@itaupersonnalite.com.br' }, { from: 'faturaporemail@santander.com.br' }, { from: 'fatura@xpi.com.br' } ] }, actions: { archive: true, labels: ['Fatura do Cartão'] } },
 ];
 
 // Here is where we define our configuration and apply the rules
