@@ -1,6 +1,6 @@
 [core]
-project = finmgmt-92acb
-account = totvsapps-platform-portal-prd@tab1784-service-72-322963.iam.gserviceaccount.com
+project = cs-host-dff3ead0da164b46a534d8
+account = brunoscota@gmail.com
 disable_usage_reporting = False
 
 [auth]
