@@ -30,7 +30,7 @@ local spam = {
     { from: 'promotions@kto.com'},{ from: 'no-reply@folhadespaulo.com.br'},{ from: 'Coursera@m.learn.coursera.org'},{ from: 'avianca@newsletter.avianca.com' },
     { from: 'contato@globoplaymkt.globo.com' },{ from: 'Microsoftstore@microsoftstore.microsoft.com' }, { from: 'no-reply@abya.com'}, { from: 'email.mkt@agilize.com.br'},
     { from: 'tagitau.ofertas@itau.com.br'}, {from: 'hello@news.invoicesimple.com'}, { from: 'serviceteam@emails.myus.com'}, { from: 'roberta@colnaghi.com.br'},
-    { from: 'marketing@news.shoulder.com.br'}, { from: 'noreply@info.mail.amadeus.com'}, { from: 'ubuntu-hardened-request@lists.ubuntu.com'}
+    { from: 'marketing@news.shoulder.com.br'}, { from: 'noreply@info.mail.amadeus.com'}, { from: 'ubuntu-hardened-request@lists.ubuntu.com'}, { from: 'movida@emkt.movida.com.br'},
   ],
 };
 
