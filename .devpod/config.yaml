@@ -1,0 +1,58 @@
+contexts:
+  default:
+    defaultProvider: kubernetes
+    providers:
+      docker:
+        creationTimestamp: "2025-05-13T13:33:02Z"
+        initialized: true
+        options:
+          DOCKER_BUILDER:
+            userProvided: true
+          DOCKER_HOST:
+            userProvided: true
+          DOCKER_PATH:
+            userProvided: true
+            value: docker
+          INACTIVITY_TIMEOUT:
+            userProvided: true
+        singleMachine: true
+      kubernetes:
+        creationTimestamp: "2025-05-13T13:33:17Z"
+        initialized: true
+        options:
+          ARCHITECTURE: {}
+          CLUSTER_ROLE: {}
+          CREATE_NAMESPACE:
+            value: "true"
+          DISK_SIZE:
+            userProvided: true
+            value: 10Gi
+          DOCKERLESS_DISABLED:
+            value: "false"
+          DOCKERLESS_IMAGE: {}
+          INACTIVITY_TIMEOUT: {}
+          KUBERNETES_CONFIG:
+            userProvided: true
+          KUBERNETES_CONTEXT:
+            userProvided: true
+            value: k3s
+          KUBERNETES_NAMESPACE:
+            userProvided: true
+            value: devpod
+          KUBERNETES_PULL_SECRETS_ENABLED:
+            value: "true"
+          LABELS: {}
+          NODE_SELECTOR: {}
+          POD_MANIFEST_TEMPLATE: {}
+          POD_TIMEOUT:
+            value: 10m
+          PVC_ACCESS_MODE: {}
+          PVC_ANNOTATIONS: {}
+          RESOURCES: {}
+          SERVICE_ACCOUNT: {}
+          STORAGE_CLASS: {}
+          STRICT_SECURITY:
+            value: "false"
+          WORKSPACE_VOLUME_MOUNT: {}
+        singleMachine: true
+defaultContext: default
