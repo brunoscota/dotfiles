@@ -83,9 +83,7 @@ if [ ! -f /.dockerenv ] && [ "$(uname)" = "Linux" ]; then
   eval "$(~/.rbenv/bin/rbenv init -)"
 fi
 
-echo >> /Users/brunoscota/.zprofile
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/brunoscota/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 export PATH="${PATH}:${HOME}/.krew/bin"
