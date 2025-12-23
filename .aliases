@@ -35,3 +35,15 @@ alias vscm='code --goto'
 
 alias gcloudl='gcloud auth login'
 alias gcloudca='gcloud config configurations activate'
+
+# Antigravity Aliases
+alias ag='antigravity'
+alias ags='antigravity --status'
+alias agn='antigravity --new-window'
+alias agr='antigravity --reuse-window'
+alias aga='antigravity --add'
+alias agw='antigravity --wait'
+alias agv='antigravity --version'
+alias agd='antigravity --diff'
+alias agm='antigravity --goto'
+alias agchat='antigravity chat'

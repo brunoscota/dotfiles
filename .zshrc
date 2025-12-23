@@ -90,3 +90,6 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 # export DOCKER_HOST=tcp://lenovo:2375
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/brunoscota/.antigravity/antigravity/bin:$PATH"
