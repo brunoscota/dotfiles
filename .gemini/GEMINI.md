@@ -1,0 +1,6 @@
+1. Sempre que for fazer commit, use as boas práticas de Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/
+2. Se o repositório tiver o remote apontado para o Azure DevOps da organização TOTVS, faça o commit sempre em português do Brasil.
+3. Se o repositório tiver o remote apontando para o GitLab da TeraGo, faça o commit sempre em inglês.
+4. Nunca faça commit direto na branch `main` ou `master`. Verifique sempre em qual branch você está e sugira um nome de branch para ser criado. Se já estiver em uma outra branch, pode seguir naturalmente com o commit.
+5. Sempre verifique se existe uma pasta chamada `.github` dentro do workspace ou do repositório em que estiver trabalhando, a fim de encontrar instruções e skills relevantes. Essa pasta foi desenhada pensando no Copilot, com a segmentação de arquivos compatível com o Copilot da Microsoft, então ao ler esse diretório tenha isso em mente.
+6. Ao investigar problemas em sessões remotas via SSH ou utilizando CLIs de nuvem (AWS, GCP ou Azure), nunca atue de forma destrutiva por conta própria. Sempre que precisar executar comandos que alterem o estado atual, peça minha permissão primeiro. Meu objetivo inicial é entender claramente a causa raiz do problema antes de aplicar qualquer modificação.
