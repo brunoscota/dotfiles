@@ -118,15 +118,20 @@ if [ ! -f /.dockerenv ] && [ "$(uname)" = "Linux" ]; then
   load-nvmrc
 
   export PATH="${HOME}/.pyenv/bin:$PATH"
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
+  if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+  fi
 
   export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(~/.rbenv/bin/rbenv init -)"
+  if [ -x "$HOME/.rbenv/bin/rbenv" ]; then
+    eval "$(~/.rbenv/bin/rbenv init -)"
+  fi
 fi
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
+if [ "$(uname)" = "Darwin" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 export PATH="${PATH}:${HOME}/.krew/bin"
 # export DOCKER_HOST=tcp://lenovo:2375
@@ -134,6 +139,8 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Added by Antigravity
-export PATH="/Users/brunoscota/.antigravity/antigravity/bin:$PATH"
+if [ "$(uname)" = "Darwin" ]; then
+  export PATH="/Users/brunoscota/.antigravity/antigravity/bin:$PATH"
+  export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+fi
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
