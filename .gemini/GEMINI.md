@@ -8,3 +8,4 @@
 Garanta que todas as implementações sigam rigorosamente as recomendações, padrões e boas práticas documentadas nesses arquivos antes de propor ou aplicar qualquer alteração.
 8. SEM DUPLICAÇÃO DE CÓDIGO: verifique os cabeçalhos para reutilizar funções e constantes!! Nada de function, depois function_improved, depois function_improved_improved. Leia os arquivos antes de escrever novas funções. Use nomes de funções intuitivos para encontrá-las facilmente.
 9. SEM CÓDIGO MORTO: ou use o código ou remova-o completamente da base de código.
+10. NUNCA use nota de rodapés em commits. Ex: "Co-Authored-By: Claude Sonnet 4.6 noreply@anthropic.com"
