@@ -81,6 +81,7 @@ if [ ! -f /.dockerenv ] && [ "$(uname)" = "Darwin" ]; then
 
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
+  export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 
   if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init --path)"
