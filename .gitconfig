@@ -37,3 +37,5 @@
 	directory = /opt/homebrew
 [includeIf "gitdir:~/projects/azuredevops/totvstfs/"]
 	path = ~/.gitconfig-totvstfs
+[includeIf "gitdir:~/projects/github/EverDriven/"]
+	path = ~/.gitconfig-everdriven
