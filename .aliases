@@ -47,3 +47,7 @@ alias agv='antigravity --version'
 alias agd='antigravity --diff'
 alias agm='antigravity --goto'
 alias agchat='antigravity chat'
+
+# Kubernetes EverDriven login
+alias k8s-login-everdriven-prod='kubectl oulogin --host=openunison.prod.everdriven.com'
+alias k8s-login-everdriven-preprod='kubectl oulogin --host=openunison.preprod.everdriven.com'

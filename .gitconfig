@@ -35,6 +35,8 @@
 	rebase = true
 [safe]
 	directory = /opt/homebrew
+[includeIf "gitdir:~/projects/github/brunoscota/"]
+  path = ~/.gitconfig-personal
 [includeIf "gitdir:~/projects/azuredevops/totvstfs/"]
 	path = ~/.gitconfig-totvstfs
 [includeIf "gitdir:~/projects/github/EverDriven/"]
